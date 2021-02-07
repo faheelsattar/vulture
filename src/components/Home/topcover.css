@@ -1,0 +1,76 @@
+.topcover{
+    padding: 40px;
+    background-color: #0f0e17;
+}
+.topcover-main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.topcover-heading{
+    font-weight:bold;
+    font-size: 3rem;
+    color:#fffffe;
+    display: inline;
+}
+
+.topcover-meeting-holder{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.topcover-text-holder{
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 15px;
+    color:#a7a9be
+}
+
+.meeting-id-inpt{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.topcover-img-holder{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.topcover-img{
+    width: 100%;
+}
+
+.feature-circle{
+    height: 70px;
+    width: 70px;
+    background-color: #fffffe;
+}
+.circle-flex{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.circle-img-holder{
+    width: 40px;
+    line-height: 65px;
+    margin: 0 auto;
+}
+
+.circle-img{
+    width: 100%;
+}
+
+.circle-text{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fffffe;
+    word-spacing: 20;
+}

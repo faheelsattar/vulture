@@ -1,0 +1,40 @@
+.nav-main{
+ 
+}
+
+.center-links{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.right-links{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-holder{
+    width: 50px;
+}
+
+.main-logo{
+    width: 100%;
+}
+
+.nav-links-holder{
+    list-style: none;
+    display: flex;
+    color: #fffffe;
+}
+.nav-links-holder .nav-link{
+    padding: 0 20px;
+}
+
+.nav-ctr-lnk{
+    text-decoration: none;
+}
+
+.btn-wt-brdr{
+    border: 1px solid #ffffff;
+}

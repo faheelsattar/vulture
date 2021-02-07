@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 300 15px/28px "Poppins", sans-serif;
+  background-color: #0f0e17;
+}
+
+input:focus {
+  outline-offset: 0px;
+  outline: none
+}
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+a{
+  color: inherit
+}
+.a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none !important
+}
+
+button:focus {
+  outline: none !important
+}
+

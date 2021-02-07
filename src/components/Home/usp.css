@@ -1,0 +1,47 @@
+.usp-main{
+    background-color: #fbfbfb;
+    padding: 100px 0;
+}
+
+.badge-custom-secondary {
+    color: #fff;
+    background-color: #0f0e17;
+    padding: 0.5rem 0.87rem;
+}
+.usp-img-holder{
+    width: 30px;
+}
+
+.usp-img{
+    width: 100%;
+}
+.usp-text{
+    color:#6c757d!important;
+    margin-bottom:0 ;
+} 
+
+.usp-side-img-holder{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.usp-side-img{
+    width: 100%;
+}
+
+.usp-card{
+    background-color: #0f0e17;
+}
+
+.usp-content{
+    margin-top: 15px;
+}
+.usp-heading{
+    color: #fffffe;
+    font-weight: bold;
+    margin: 0;
+}
+
+.usp-text{
+    color: #a7a9be
+}

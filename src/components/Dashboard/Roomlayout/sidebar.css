@@ -1,0 +1,50 @@
+.sidebar-main{
+    left: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+.sdbr-pos-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.sdbr-pos-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.sidebar-tab-holder{
+    list-style: none;
+    text-align: center;
+    width: 76px;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+}
+.sidebar-tab{
+    padding: 12px 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sidebar-tab:hover{
+    background-color: rgb(238, 238, 238)
+}
+
+.tabs-img{
+    width: 100%;
+}
+
+.tabs-img-holder{
+    width: 30px;
+    margin: 0 auto;
+}
+

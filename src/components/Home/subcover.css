@@ -1,0 +1,26 @@
+.subcover-main{
+    position: absolute;
+    top:90%;
+}
+.subcover-main-heading{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.subcover-main-card{
+    background-color: #ffffff;
+    color: #0f0e17;
+}
+
+.subcover-main-cardbody{
+    padding: 2.5rem;
+}
+
+.subcover-btn-border{
+    border: 1px solid #ffffff;
+}
+
+.subcover-btn-bg{
+    background-color: #0f0e17;
+}

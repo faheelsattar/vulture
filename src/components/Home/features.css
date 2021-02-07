@@ -1,0 +1,86 @@
+.features-main{
+    padding: 100px 0;
+    background-color: #fbfbfb;
+}
+
+.features-text-holder{
+    text-align: center;
+}
+
+.features-text-holder h2{
+    font-size: 2.5rem;
+    color: #0f0e17;
+    font-weight: 700;
+}
+
+.features-text-holder p{
+    color:#2e2f3e;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.features-body{
+    display: flex;
+    flex-direction: column;
+}
+.features-odd{
+    text-align: right;
+}
+
+.features-even{
+    text-align: left
+}
+
+.features-img-holder-odd{
+    width: 35px;
+    align-self: flex-end;
+}
+
+.features-img-holder-even{
+    width: 35px;
+    align-self: flex-start;
+}
+
+.features-img{
+    width: 100%;
+}
+
+.features-content{
+    margin-top: 10px;
+}
+
+.features-heading{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.features-text{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.meeting-ft-img-holder{
+    width: 100%;
+    box-shadow: 0 6px 2px -2px rgb(223, 223, 223);
+}
+
+.meeting-ft-img{
+    width: 100%;
+    height: auto;
+}
+
+/* .bx-shadow-feature{
+    background-color: #0f0e17 ;
+    color: #ffffff;
+    box-shadow: 0 3px 20px 0 rgba(10, 8, 110, 0.589);
+    border: none;
+} */
+.bx-shadow-none{
+    box-shadow: none;
+    border: none;
+    background-color: #fbfbfb ;
+}
+

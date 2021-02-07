@@ -1,0 +1,14 @@
+.dashimage-holder{
+    width: 500px;
+    height: 300px;
+}
+.dashimage-img{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.26);
+}

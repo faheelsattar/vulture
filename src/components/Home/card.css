@@ -1,0 +1,11 @@
+.card-main{
+    border: 1px solid #eff2f7;
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 1.5rem!important;
+}
+
+.card-body{
+    padding: 1.5rem;
+}

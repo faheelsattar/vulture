@@ -1,0 +1,87 @@
+.reviews-main{
+    padding: 100px 0;
+    background-color: #0f0e17;
+}
+
+.review-text-holder{
+    text-align: center;
+}
+
+.review-text-holder h3{
+    color: #fffffe
+}
+
+.reviews-authors-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.reviews-single-body{
+    cursor: pointer;
+    margin-bottom: 32px;
+    transition: opacity .2s ease-in;
+    display: block;
+    padding: 5px 8px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.reviews-single-unactive{
+    opacity: .5;
+}
+.reviews-single-active{
+    opacity: 1;
+    background-color: #fffffe;
+    box-shadow: 0 8px 16px rgba(221, 224, 230, 0.1), 0 4px 8px rgba(229, 232, 240, 0.08);
+}
+
+.review-body-holder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.review-img-holder{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.review-content-holder{
+    margin-left: 10px;
+}
+
+.review-author{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding-top:2px ;
+    line-height: 10px;
+}
+
+.review-author-job{
+    font-size: 10px;
+    margin: 0;
+}
+
+.fa-heart{
+    color: #ef4343;
+    font-size: 50px;
+}
+
+.review-data-holder{
+    height: 200px;
+}
+
+.review-data-holder p{
+    text-align: center;
+    color: #a7a9be;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
