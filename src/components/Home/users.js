@@ -1,5 +1,5 @@
 import React from 'react'
-import Circle from './circle'
+import Circle from '../Shared/circle'
 import './users.css'
 import USER_TYPES_DATA from "./usertypesdata"
 

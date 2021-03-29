@@ -1,7 +1,7 @@
 import React from 'react'
 import CIRCLE_DATA from './circledata'
 import "./topcover.css"
-import Circle from './circle'
+import Circle from '../Shared/circle'
 import Subcover from './subcover'
 
 const Topcover = () => {

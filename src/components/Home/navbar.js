@@ -5,8 +5,8 @@ import Modal from '../Shared/modal'
 import Auth from './auth/auth'
 const Navbar = (props) => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg bg-transparent affix nav-down">
+        <div className="navbar-holder">
+            <nav className="navbar navbar-expand-lg  affix nav-down">
                 <div className="nav-main container">
                     <div className="logo-holder">
                         <img className="main-logo" src="./images/logo/temp-logo.svg" />

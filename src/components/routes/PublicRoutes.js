@@ -2,9 +2,8 @@ import React from 'react';
 import {
     Route,
     Redirect,
-    useHistory
 } from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 
 const PublicRoute = ({component: Component, restricted, ...rest}) => {
     const authreducer = useSelector(state => state.authReducer)

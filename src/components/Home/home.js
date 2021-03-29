@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Dashimage from './dashimage'
 import Navbar from './navbar'
 import Topcover from './topcover'
 import Users from './users'
@@ -11,7 +10,7 @@ import Auth from './auth/auth'
 const Home = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div>
+        <div className="home-main">
             <Navbar handleAuthOpen={() => setOpen(true)} />
             <Topcover />
             <Usp />
