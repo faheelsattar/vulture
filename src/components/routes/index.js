@@ -11,7 +11,6 @@ const WebRoutes = (props) => {
             {/* {Object.keys(authreducer.user).length > 0 ? <Navbar /> : null} */}
             <Switch>
                 <PublicRoute exact path="/" component={Home} />
-                <ProtectedRoute exact path="/room/:roomid" component={Room1} />
                 <Route path="*" component={() => <div>404 </div>} />
             </Switch>
         </Router>

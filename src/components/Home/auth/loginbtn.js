@@ -10,7 +10,7 @@ const Loginbtn = (props) => {
             const options = {
                 method: "POST",
                 body: JSON.stringify({
-                    token: result.uc.id_token,
+                    token: result.tc.id_token,
                 }),
                 headers: {
                     'Accept': 'application/json',
