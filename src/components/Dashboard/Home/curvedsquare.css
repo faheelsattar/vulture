@@ -1,0 +1,30 @@
+.curv-sqr-holder{
+    margin-top: 30px;
+}
+
+.curv-sqr-cont {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.curv-sqr-bck-green {
+  background-color: #1ee36b;
+}
+
+.curv-sqr-bck-grey {
+  background-color: #252525;
+}
+
+.curv-img-holder{
+    width: 35px;
+    display: block;
+    margin: 3px auto;
+}
+
+.curv-img{
+    width: 100%;
+
+}

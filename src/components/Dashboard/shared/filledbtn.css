@@ -1,0 +1,24 @@
+.filled-btn{
+    border-radius: 6px;
+    padding: 8px 16px;
+    background-color: #1ee36b;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s linear;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: 2px solid #1ee36b;
+}
+
+.filled-btn:hover{
+    background-color: #ffffff;
+    color: #1ee36b;
+    border: 2px solid #1ee36b;
+    text-decoration: none;
+}

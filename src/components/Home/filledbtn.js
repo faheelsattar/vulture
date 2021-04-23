@@ -5,7 +5,7 @@ const Filledbtn = (props) => {
     return (
         <a
             className={`home-filled-btn ${props.homebtnborder} ${props.homebgborder}`}
-            onClick={props.click}>
+            onClick={()=>props.click()}>
             {props.text}
         </a>
     )

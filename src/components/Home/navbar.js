@@ -33,7 +33,7 @@ const Navbar = (props) => {
                                 <a className="nav-ctr-lnk">Join Meeting</a>
                             </li>
                             <li className="nav-link">
-                                <Filledbtn text="Sign up Free" homebtnborder="btn-wt-brdr" click={props.handleAuthOpen} />
+                                <Filledbtn text="Sign up Free" homebtnborder="btn-wt-brdr" click={props.handleOpen} />
                             </li>
                         </ul>
                     </div>

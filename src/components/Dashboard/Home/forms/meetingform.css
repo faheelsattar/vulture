@@ -1,0 +1,56 @@
+.inpt-inline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inpt-holder-hv {
+  width: 49%;
+}
+
+.inpt-meeting {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  background-color: #252525;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+}
+.room-name-inpt {
+  width: 100%;
+  margin-right: 4%;
+}
+
+.usr-name-inpt {
+  width: 100%;
+  margin-left: 4%;
+}
+
+.inpt-holder {
+  margin-top: 20px;
+}
+
+.room-desc-inpt {
+  width: 100%;
+}
+
+.meeting-create-btn-holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 11px;
+}
+
+.meeting-back-btn {
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  color: #121212;
+}
+
+.meeting-back-btn:hover {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  text-decoration: none !important;
+}

@@ -1,52 +1,47 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import './App.css';
-import { useDispatch, useSelector } from "react-redux"
-import WebRoutes from './components/routes/index'
-import { fetchAuthPending, fetchAuthSuccess, fetchAuthError } from "./actions/authactions"
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import WebRoutes from "./components/routes/index";
+import { socketcontext, socket } from "./context/socket";
+
 function App() {
-  const dispatch = useDispatch()
-  const [ispending, setIsPending] = useState(true)
+  const [ispending, setIsPending] = useState(true);
   const authVerification = async () => {
     try {
-      dispatch(fetchAuthPending())
       const result = await fetch("http://localhost:4000/verification", {
         method: "GET",
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
-        credentials: "include"
-      })
+        credentials: "include",
+      });
       if (result.ok) {
-        const data = await result.json()
-        console.log("App.js ", data)
-        dispatch(fetchAuthSuccess(data.Data.user))
-        setIsPending(false)
+        const data = await result.json();
+        console.log("App.js ", data);
+        setIsPending(false);
       } else {
-        throw result
+        throw result;
       }
     } catch (err) {
       if (err.status === 401) {
-        const errholder = await err.json()
-        dispatch(fetchAuthError({
-          error: errholder.message
-        }))
+        const errholder = await err.json();
       }
-      setIsPending(false)
+      setIsPending(false);
     }
-  }
+  };
   useEffect(() => {
-    authVerification()
-  }, [])
+    authVerification();
+  }, []);
   if (ispending) {
-    return <p> Loading</p>
+    return <p> Loading</p>;
   } else {
     return (
       <div className="App">
-        <WebRoutes />
+        <socketcontext.Provider value={socket}>
+          <WebRoutes />
+        </socketcontext.Provider>
       </div>
-    )
+    );
   }
 }
 

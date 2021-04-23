@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react'
-import "./modal.css"
-
+import React from 'react';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 const Modal = (props) => {
-    useEffect(() => {
-        console.log(props.isopen)
-        if (props.isopen) {
-            document.body.style.overflow = 'hidden';
-        }else{
-            document.body.style.overflow = 'visible';
-        }
-    })
-    if (props.isopen) {
-        return (
-            <div className="overlay">
-                <div className="modal-container">
-                    <a className="modal-close" onClick={props.handleAuthOpen}>
-                        <i className="fa fa-times" />
-                    </a>
+    return (
+        <div>
+            <Dialog
+                open={props.open}
+                onClose={props.handleClose}
+                aria-labelledby="form-dialog-title"
+                fullWidth={true}
+                maxWidth={props.size}
+            >
+                <DialogTitle id="form-dialog-title">{props.heading}</DialogTitle>
+                <DialogContent>
+                    <DialogContentText>
+                        {props.subheading}
+                    </DialogContentText>
                     {props.children}
-                </div>
-            </div>
-        )
-    } else {
-        return <> </>
-    }
+                </DialogContent>
+            </Dialog>
+        </div>
+    );
 }
+
 export default Modal

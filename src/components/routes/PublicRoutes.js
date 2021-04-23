@@ -1,22 +1,16 @@
-import React from 'react';
-import {
-    Route,
-    Redirect,
-} from 'react-router-dom';
-import { useSelector } from "react-redux"
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
 
-const PublicRoute = ({component: Component, restricted, ...rest}) => {
-    const authreducer = useSelector(state => state.authReducer)
-    console.log(Object.keys(authreducer.user).length ,"Public route auth length")
-    console.log(authreducer)
-    return (
-        // restricted = false meaning public route
-        // restricted = true meaning restricted route
-        <Route {...rest} render={props => (
-            Object.keys(authreducer.user).length > 0 ?
-                <Redirect to="/dashboard" />
-            : <Component {...props} />
-        )} />
-    );
+const PublicRoute = ({ component: Component, restricted, ...rest }) => {
+  return (
+    // restricted = false meaning public route
+    // restricted = true meaning restricted route
+    <Route
+      {...rest}
+      render={(props) =>
+        2 === 1 ? <Redirect to="/" /> : <Component {...props} />
+      }
+    />
+  );
 };
 export default PublicRoute;
